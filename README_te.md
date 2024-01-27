@@ -24,6 +24,7 @@ limitations under the License.
   <br/>
 </p>
 
+
 <p align="center">
     <a href="https://circleci.com/gh/huggingface/transformers">
         <img alt="Build" src="https://img.shields.io/circleci/build/github/huggingface/transformers/main">
@@ -43,9 +44,10 @@ limitations under the License.
     <a href="https://zenodo.org/badge/latestdoi/155220641"><img src="https://zenodo.org/badge/155220641.svg" alt="DOI"></a>
 </p>
 
+
 <h4 align="center">
     <p>
-        <b>English</b> |
+        <a href="https://github.com/huggingface/transformers/">English</a> |
         <a href="https://github.com/huggingface/transformers/blob/main/README_zh-hans.md">简体中文</a> |
         <a href="https://github.com/huggingface/transformers/blob/main/README_zh-hant.md">繁體中文</a> |
         <a href="https://github.com/huggingface/transformers/blob/main/README_ko.md">한국어</a> |
@@ -54,90 +56,89 @@ limitations under the License.
         <a href="https://github.com/huggingface/transformers/blob/main/README_hd.md">हिन्दी</a> |
         <a href="https://github.com/huggingface/transformers/blob/main/README_ru.md">Русский</a> |
         <a href="https://github.com/huggingface/transformers/blob/main/README_pt-br.md">Рortuguês</a> |
-        <a href="https://github.com/huggingface/transformers//blob/main/README_te.md">తెలుగు</a> |
+        <b>తెలుగు</b> |
     </p>
 </h4>
 
 <h3 align="center">
-    <p>State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow</p>
+    <p>JAX, PyTorch మరియు TensorFlow కోసం అత్యాధునిక యంత్ర అభ్యాసం</p>
 </h3>
 
 <h3 align="center">
     <a href="https://hf.co/course"><img src="https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/course_banner.png"></a>
 </h3>
 
-🤗 Transformers provides thousands of pretrained models to perform tasks on different modalities such as text, vision, and audio.
+🤗 ట్రాన్స్‌ఫార్మర్లు టెక్స్ట్, విజన్ మరియు ఆడియో వంటి విభిన్న పద్ధతులపై టాస్క్‌లను నిర్వహించడానికి వేలాది ముందుగా శిక్షణ పొందిన మోడల్‌లను అందిస్తాయి.
 
-These models can be applied on:
+ఈ నమూనాలు వర్తించవచ్చు:
 
-* 📝 Text, for tasks like text classification, information extraction, question answering, summarization, translation, and text generation, in over 100 languages.
-* 🖼️ Images, for tasks like image classification, object detection, and segmentation.
-* 🗣️ Audio, for tasks like speech recognition and audio classification.
+* 📝 టెక్స్ట్, 100కి పైగా భాషల్లో టెక్స్ట్ క్లాసిఫికేషన్, ఇన్ఫర్మేషన్ ఎక్స్‌ట్రాక్షన్, ప్రశ్నలకు సమాధానాలు, సారాంశం, అనువాదం, టెక్స్ట్ జనరేషన్ వంటి పనుల కోసం.
+* 🖼️ ఇమేజ్‌లు, ఇమేజ్ వర్గీకరణ, ఆబ్జెక్ట్ డిటెక్షన్ మరియు సెగ్మెంటేషన్ వంటి పనుల కోసం.
+* 🗣️ ఆడియో, స్పీచ్ రికగ్నిషన్ మరియు ఆడియో వర్గీకరణ వంటి పనుల కోసం.
 
-Transformer models can also perform tasks on **several modalities combined**, such as table question answering, optical character recognition, information extraction from scanned documents, video classification, and visual question answering.
+ట్రాన్స్‌ఫార్మర్ మోడల్‌లు టేబుల్ క్వశ్చన్ ఆన్సర్ చేయడం, ఆప్టికల్ క్యారెక్టర్ రికగ్నిషన్, స్కాన్ చేసిన డాక్యుమెంట్‌ల నుండి ఇన్ఫర్మేషన్ ఎక్స్‌ట్రాక్షన్, వీడియో క్లాసిఫికేషన్ మరియు విజువల్ క్వశ్చన్ ఆన్సర్ చేయడం వంటి **అనేక పద్ధతులతో కలిపి** పనులను కూడా చేయగలవు.
 
-🤗 Transformers provides APIs to quickly download and use those pretrained models on a given text, fine-tune them on your own datasets and then share them with the community on our [model hub](https://huggingface.co/models). At the same time, each python module defining an architecture is fully standalone and can be modified to enable quick research experiments.
+🤗 ట్రాన్స్‌ఫార్మర్లు అందించిన టెక్స్ట్‌లో ప్రీట్రైన్డ్ మోడల్‌లను త్వరగా డౌన్‌లోడ్ చేయడానికి మరియు ఉపయోగించడానికి, వాటిని మీ స్వంత డేటాసెట్‌లలో ఫైన్-ట్యూన్ చేయడానికి మరియు వాటిని మా [మోడల్ హబ్](https://huggingface.co/models)లో సంఘంతో భాగస్వామ్యం చేయడానికి API లను అందిస్తుంది. అదే సమయంలో, ఆర్కిటెక్చర్‌ని నిర్వచించే ప్రతి పైథాన్ మాడ్యూల్ పూర్తిగా స్వతంత్రంగా ఉంటుంది మరియు త్వరిత పరిశోధన ప్రయోగాలను ప్రారంభించడానికి సవరించవచ్చు.
 
-🤗 Transformers is backed by the three most popular deep learning libraries — [Jax](https://jax.readthedocs.io/en/latest/), [PyTorch](https://pytorch.org/) and [TensorFlow](https://www.tensorflow.org/) — with a seamless integration between them. It's straightforward to train your models with one before loading them for inference with the other.
+🤗 ట్రాన్స్‌ఫార్మర్‌లకు మూడు అత్యంత ప్రజాదరణ పొందిన డీప్ లెర్నింగ్ లైబ్రరీలు ఉన్నాయి — [Jax](https://jax.readthedocs.io/en/latest/), [PyTorch](https://pytorch.org/) మరియు [TensorFlow](https://www.tensorflow.org/) — వాటి మధ్య అతుకులు లేని ఏకీకరణతో. మీ మోడల్‌లను ఒకదానితో మరొకదానితో అనుమితి కోసం లోడ్ చేసే ముందు వాటికి శిక్షణ ఇవ్వడం చాలా సులభం.
 
-## Online demos
+## ఆన్‌లైన్ డెమోలు
 
-You can test most of our models directly on their pages from the [model hub](https://huggingface.co/models). We also offer [private model hosting, versioning, & an inference API](https://huggingface.co/pricing) for public and private models.
+మీరు [మోడల్ హబ్](https://huggingface.co/models) నుండి మా మోడళ్లలో చాలా వరకు వాటి పేజీలలో నేరుగా పరీక్షించవచ్చు. మేము పబ్లిక్ మరియు ప్రైవేట్ మోడల్‌ల కోసం [ప్రైవేట్ మోడల్ హోస్టింగ్, సంస్కరణ & అనుమితి API](https://huggingface.co/pricing)ని కూడా అందిస్తాము.
 
-Here are a few examples:
+ఇక్కడ కొన్ని ఉదాహరణలు ఉన్నాయి:
 
- In Natural Language Processing:
-- [Masked word completion with BERT](https://huggingface.co/bert-base-uncased?text=Paris+is+the+%5BMASK%5D+of+France)
-- [Name Entity Recognition with Electra](https://huggingface.co/dbmdz/electra-large-discriminator-finetuned-conll03-english?text=My+name+is+Sarah+and+I+live+in+London+city)
-- [Text generation with GPT-2](https://huggingface.co/gpt2?text=A+long+time+ago%2C+)
-- [Natural Language Inference with RoBERTa](https://huggingface.co/roberta-large-mnli?text=The+dog+was+lost.+Nobody+lost+any+animal)
-- [Summarization with BART](https://huggingface.co/facebook/bart-large-cnn?text=The+tower+is+324+metres+%281%2C063+ft%29+tall%2C+about+the+same+height+as+an+81-storey+building%2C+and+the+tallest+structure+in+Paris.+Its+base+is+square%2C+measuring+125+metres+%28410+ft%29+on+each+side.+During+its+construction%2C+the+Eiffel+Tower+surpassed+the+Washington+Monument+to+become+the+tallest+man-made+structure+in+the+world%2C+a+title+it+held+for+41+years+until+the+Chrysler+Building+in+New+York+City+was+finished+in+1930.+It+was+the+first+structure+to+reach+a+height+of+300+metres.+Due+to+the+addition+of+a+broadcasting+aerial+at+the+top+of+the+tower+in+1957%2C+it+is+now+taller+than+the+Chrysler+Building+by+5.2+metres+%2817+ft%29.+Excluding+transmitters%2C+the+Eiffel+Tower+is+the+second+tallest+free-standing+structure+in+France+after+the+Millau+Viaduct)
-- [Question answering with DistilBERT](https://huggingface.co/distilbert-base-uncased-distilled-squad?text=Which+name+is+also+used+to+describe+the+Amazon+rainforest+in+English%3F&context=The+Amazon+rainforest+%28Portuguese%3A+Floresta+Amaz%C3%B4nica+or+Amaz%C3%B4nia%3B+Spanish%3A+Selva+Amaz%C3%B3nica%2C+Amazon%C3%ADa+or+usually+Amazonia%3B+French%3A+For%C3%AAt+amazonienne%3B+Dutch%3A+Amazoneregenwoud%29%2C+also+known+in+English+as+Amazonia+or+the+Amazon+Jungle%2C+is+a+moist+broadleaf+forest+that+covers+most+of+the+Amazon+basin+of+South+America.+This+basin+encompasses+7%2C000%2C000+square+kilometres+%282%2C700%2C000+sq+mi%29%2C+of+which+5%2C500%2C000+square+kilometres+%282%2C100%2C000+sq+mi%29+are+covered+by+the+rainforest.+This+region+includes+territory+belonging+to+nine+nations.+The+majority+of+the+forest+is+contained+within+Brazil%2C+with+60%25+of+the+rainforest%2C+followed+by+Peru+with+13%25%2C+Colombia+with+10%25%2C+and+with+minor+amounts+in+Venezuela%2C+Ecuador%2C+Bolivia%2C+Guyana%2C+Suriname+and+French+Guiana.+States+or+departments+in+four+nations+contain+%22Amazonas%22+in+their+names.+The+Amazon+represents+over+half+of+the+planet%27s+remaining+rainforests%2C+and+comprises+the+largest+and+most+biodiverse+tract+of+tropical+rainforest+in+the+world%2C+with+an+estimated+390+billion+individual+trees+divided+into+16%2C000+species)
-- [Translation with T5](https://huggingface.co/t5-base?text=My+name+is+Wolfgang+and+I+live+in+Berlin)
+సహజ భాషా ప్రాసెసింగ్‌లో:
+- [BERT తో మాస్క్‌డ్ వర్డ్ కంప్లీషన్](https://huggingface.co/bert-base-uncased?text=Paris+is+the+%5BMASK%5D+of+France)
+- [Electra తో పేరు ఎంటిటీ గుర్తింపు](https://huggingface.co/dbmdz/electra-large-discriminator-finetuned-conll03-english?text=My+name+is+Sarah+and+I+live+in+London+city)
+- [GPT-2 తో టెక్స్ట్ జనరేషన్](https://huggingface.co/gpt2?text=A+long+time+ago%2C+)
+- [RoBERTa తో సహజ భాషా అనుమితి](https://huggingface.co/roberta-large-mnli?text=The+dog+was+Lost.+Nobody+lost+any+animal)
+- [BART తో సారాంశం](https://huggingface.co/facebook/bart-large-cnn?text=The+tower+is+324+metres+%281%2C063+ft%29+tall%2C+about+the+same+height+as+an+81-storey+building%2C+and+the+tallest+structure+in+Paris.+Its+base+is+square%2C+measuring+125+metres+%28410+ft%29+on+each+side.+During+its+construction%2C+the+Eiffel+Tower+surpassed+the+Washington+Monument+to+become+the+tallest+man-made+structure+in+the+world%2C+a+title+it+held+for+41+years+until+the+Chrysler+Building+in+New+York+City+was+finished+in+1930.+It+was+the+first+structure+to+reach+a+height+of+300+metres.+Due+to+the+addition+of+a+broadcasting+aerial+at+the+top+of+the+tower+in+1957%2C+it+is+now+taller+than+the+Chrysler+Building+by+5.2+metres+%2817+ft%29.+Excluding+transmitters%2C+the+Eiffel+Tower+is+the+second+tallest+free-standing+structure+in+France+after+the+Millau+Viaduct)
+- [DistilBERT తో ప్రశ్న సమాధానం](https://huggingface.co/distilbert-base-uncased-distilled-squad?text=Which+name+is+also+used+to+describe+the+Amazon+rainforest+in+English%3F&context=The+Amazon+rainforest+%28Portuguese%3A+Floresta+Amaz%C3%B4nica+or+Amaz%C3%B4nia%3B+Spanish%3A+Selva+Amaz%C3%B3nica%2C+Amazon%C3%ADa+or+usually+Amazonia%3B+French%3A+For%C3%AAt+amazonienne%3B+Dutch%3A+Amazoneregenwoud%29%2C+also+known+in+English+as+Amazonia+or+the+Amazon+Jungle%2C+is+a+moist+broadleaf+forest+that+covers+most+of+the+Amazon+basin+of+South+America.+This+basin+encompasses+7%2C000%2C000+square+kilometres+%282%2C700%2C000+sq+mi%29%2C+of+which+5%2C500%2C000+square+kilometres+%282%2C100%2C000+sq+mi%29+are+covered+by+the+rainforest.+This+region+includes+territory+belonging+to+nine+nations.+The+majority+of+the+forest+is+contained+within+Brazil%2C+with+60%25+of+the+rainforest%2C+followed+by+Peru+with+13%25%2C+Colombia+with+10%25%2C+and+with+minor+amounts+in+Venezuela%2C+Ecuador%2C+Bolivia%2C+Guyana%2C+Suriname+and+French+Guiana.+States+or+departments+in+four+nations+contain+%22Amazonas%22+in+their+names.+The+Amazon+represents+over+half+of+the+planet%27s+remaining+rainforests%2C+and+comprises+the+largest+and+most+biodiverse+tract+of+tropical+rainforest+in+the+world%2C+with+an+estimated+390+billion+individual+trees+divided+into+16%2C000+species)
+- [T5 తో అనువాదం](https://huggingface.co/t5-base?text=My+name+is+Wolfgang+and+I+live+in+Berlin)
 
-In Computer Vision:
-- [Image classification with ViT](https://huggingface.co/google/vit-base-patch16-224)
-- [Object Detection with DETR](https://huggingface.co/facebook/detr-resnet-50)
-- [Semantic Segmentation with SegFormer](https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512)
-- [Panoptic Segmentation with MaskFormer](https://huggingface.co/facebook/maskformer-swin-small-coco)
-- [Depth Estimation with DPT](https://huggingface.co/docs/transformers/model_doc/dpt)
-- [Video Classification with VideoMAE](https://huggingface.co/docs/transformers/model_doc/videomae)
-- [Universal Segmentation with OneFormer](https://huggingface.co/shi-labs/oneformer_ade20k_dinat_large)
+కంప్యూటర్ దృష్టిలో:
+- [VIT తో చిత్ర వర్గీకరణ](https://huggingface.co/google/vit-base-patch16-224)
+- [DETR తో ఆబ్జెక్ట్ డిటెక్షన్](https://huggingface.co/facebook/detr-resnet-50)
+- [SegFormer తో సెమాంటిక్ సెగ్మెంటేషన్](https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512)
+- [MaskFormer తో పానోప్టిక్ సెగ్మెంటేషన్](https://huggingface.co/facebook/maskformer-swin-small-coco)
+- [DPT తో లోతు అంచనా](https://huggingface.co/docs/transformers/model_doc/dpt)
+- [VideoMAE తో వీడియో వర్గీకరణ](https://huggingface.co/docs/transformers/model_doc/videomae)
+- [OneFormer తో యూనివర్సల్ సెగ్మెంటేషన్](https://huggingface.co/shi-labs/oneformer_ade20k_dinat_large)
 
-In Audio:
-- [Automatic Speech Recognition with Wav2Vec2](https://huggingface.co/facebook/wav2vec2-base-960h)
-- [Keyword Spotting with Wav2Vec2](https://huggingface.co/superb/wav2vec2-base-superb-ks)
-- [Audio Classification with Audio Spectrogram Transformer](https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593)
+ఆడియోలో:
+- [Wav2Vec2 తో ఆటోమేటిక్ స్పీచ్ రికగ్నిషన్](https://huggingface.co/facebook/wav2vec2-base-960h)
+- [Wav2Vec2 తో కీవర్డ్ స్పాటింగ్](https://huggingface.co/superb/wav2vec2-base-superb-ks)
+- [ఆడియో స్పెక్ట్రోగ్రామ్ ట్రాన్స్‌ఫార్మర్‌తో ఆడియో వర్గీకరణ](https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593)
 
-In Multimodal tasks:
-- [Table Question Answering with TAPAS](https://huggingface.co/google/tapas-base-finetuned-wtq)
-- [Visual Question Answering with ViLT](https://huggingface.co/dandelin/vilt-b32-finetuned-vqa)
-- [Zero-shot Image Classification with CLIP](https://huggingface.co/openai/clip-vit-large-patch14)
-- [Document Question Answering with LayoutLM](https://huggingface.co/impira/layoutlm-document-qa)
-- [Zero-shot Video Classification with X-CLIP](https://huggingface.co/docs/transformers/model_doc/xclip)
+మల్టీమోడల్ టాస్క్‌లలో:
+- [TAPAS తో టేబుల్ ప్రశ్న సమాధానాలు](https://huggingface.co/google/tapas-base-finetuned-wtq)
+- [ViLT తో దృశ్యమాన ప్రశ్నకు సమాధానం](https://huggingface.co/dandelin/vilt-b32-finetuned-vqa)
+- [CLIP తో జీరో-షాట్ ఇమేజ్ వర్గీకరణ](https://huggingface.co/openai/clip-vit-large-patch14)
+- [LayoutLM తో డాక్యుమెంట్ ప్రశ్నకు సమాధానం](https://huggingface.co/impira/layoutlm-document-qa)
+- [X-CLIP తో జీరో-షాట్ వీడియో వర్గీకరణ](https://huggingface.co/docs/transformers/model_doc/xclip)
 
+## ట్రాన్స్‌ఫార్మర్‌లను ఉపయోగించి 100 ప్రాజెక్టులు
 
-## 100 projects using Transformers
+ట్రాన్స్‌ఫార్మర్లు ప్రీట్రైన్డ్ మోడల్‌లను ఉపయోగించడానికి టూల్‌కిట్ కంటే ఎక్కువ: ఇది దాని చుట్టూ నిర్మించిన ప్రాజెక్ట్‌ల సంఘం మరియు
+హగ్గింగ్ ఫేస్ హబ్. డెవలపర్‌లు, పరిశోధకులు, విద్యార్థులు, ప్రొఫెసర్‌లు, ఇంజనీర్లు మరియు ఎవరినైనా అనుమతించేలా ట్రాన్స్‌ఫార్మర్‌లను మేము కోరుకుంటున్నాము
+వారి కలల ప్రాజెక్టులను నిర్మించడానికి.
 
-Transformers is more than a toolkit to use pretrained models: it's a community of projects built around it and the
-Hugging Face Hub. We want Transformers to enable developers, researchers, students, professors, engineers, and anyone
-else to build their dream projects.
+ట్రాన్స్‌ఫార్మర్‌ల 100,000 నక్షత్రాలను జరుపుకోవడానికి, మేము స్పాట్‌లైట్‌ని ఉంచాలని నిర్ణయించుకున్నాము
+సంఘం, మరియు మేము 100 జాబితాలను కలిగి ఉన్న [awesome-transformers](./awesome-transformers.md) పేజీని సృష్టించాము.
+ట్రాన్స్‌ఫార్మర్ల పరిసరాల్లో అద్భుతమైన ప్రాజెక్టులు నిర్మించబడ్డాయి.
 
-In order to celebrate the 100,000 stars of transformers, we have decided to put the spotlight on the
-community, and we have created the [awesome-transformers](./awesome-transformers.md) page which lists 100
-incredible projects built in the vicinity of transformers.
+జాబితాలో భాగమని మీరు విశ్వసించే ప్రాజెక్ట్‌ను మీరు కలిగి ఉంటే లేదా ఉపయోగిస్తుంటే, దయచేసి దానిని జోడించడానికి PRని తెరవండి!
 
-If you own or use a project that you believe should be part of the list, please open a PR to add it!
-
-## If you are looking for custom support from the Hugging Face team
+## మీరు హగ్గింగ్ ఫేస్ టీమ్ నుండి అనుకూల మద్దతు కోసం చూస్తున్నట్లయితే
 
 <a target="_blank" href="https://huggingface.co/support">
     <img alt="HuggingFace Expert Acceleration Program" src="https://cdn-media.huggingface.co/marketing/transformers/new-support-improved.png" style="max-width: 600px; border: 1px solid #eee; border-radius: 4px; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);">
 </a><br>
 
-## Quick tour
+## త్వరిత పర్యటన
 
-To immediately use a model on a given input (text, image, audio, ...), we provide the `pipeline` API. Pipelines group together a pretrained model with the preprocessing that was used during that model's training. Here is how to quickly use a pipeline to classify positive versus negative texts:
+ఇచ్చిన ఇన్‌పుట్ (టెక్స్ట్, ఇమేజ్, ఆడియో, ...)పై తక్షణమే మోడల్‌ను ఉపయోగించడానికి, మేము `pipeline` API ని అందిస్తాము. పైప్‌లైన్‌లు ఆ మోడల్ శిక్షణ సమయంలో ఉపయోగించిన ప్రీప్రాసెసింగ్‌తో కూడిన ప్రీట్రైన్డ్ మోడల్‌ను సమూహపరుస్తాయి. సానుకూల మరియు ప్రతికూల పాఠాలను వర్గీకరించడానికి పైప్‌లైన్‌ను త్వరగా ఎలా ఉపయోగించాలో ఇక్కడ ఉంది:
 
 ```python
 >>> from transformers import pipeline
@@ -148,9 +149,9 @@ To immediately use a model on a given input (text, image, audio, ...), we provid
 [{'label': 'POSITIVE', 'score': 0.9996980428695679}]
 ```
 
-The second line of code downloads and caches the pretrained model used by the pipeline, while the third evaluates it on the given text. Here, the answer is "positive" with a confidence of 99.97%.
+రెండవ లైన్ కోడ్ డౌన్‌లోడ్ మరియు పైప్‌లైన్ ఉపయోగించే ప్రీట్రైన్డ్ మోడల్‌ను కాష్ చేస్తుంది, మూడవది ఇచ్చిన టెక్స్ట్‌పై మూల్యాంకనం చేస్తుంది. ఇక్కడ సమాధానం 99.97% విశ్వాసంతో "పాజిటివ్".
 
-Many tasks have a pre-trained `pipeline` ready to go, in NLP but also in computer vision and speech. For example, we can easily extract detected objects in an image:
+చాలా పనులు NLPలో కానీ కంప్యూటర్ విజన్ మరియు స్పీచ్‌లో కూడా ముందుగా శిక్షణ పొందిన `pipeline` సిద్ధంగా ఉన్నాయి. ఉదాహరణకు, మనం చిత్రంలో గుర్తించిన వస్తువులను సులభంగా సంగ్రహించవచ్చు:
 
 ``` python
 >>> import requests
@@ -182,16 +183,16 @@ Many tasks have a pre-trained `pipeline` ready to go, in NLP but also in compute
   'box': {'xmin': 345, 'ymin': 23, 'xmax': 640, 'ymax': 368}}]
 ```
 
-Here, we get a list of objects detected in the image, with a box surrounding the object and a confidence score. Here is the original image on the left, with the predictions displayed on the right:
+ఇక్కడ మనం ఆబ్జెక్ట్ చుట్టూ ఉన్న బాక్స్ మరియు కాన్ఫిడెన్స్ స్కోర్‌తో చిత్రంలో గుర్తించబడిన వస్తువుల జాబితాను పొందుతాము. ఇక్కడ ఎడమవైపున ఉన్న అసలు చిత్రం, కుడివైపున అంచనాలు ప్రదర్శించబడతాయి:
 
 <h3 align="center">
     <a><img src="https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/coco_sample.png" width="400"></a>
     <a><img src="https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/coco_sample_post_processed.png" width="400"></a>
 </h3>
 
-You can learn more about the tasks supported by the `pipeline` API in [this tutorial](https://huggingface.co/docs/transformers/task_summary).
+మీరు [ఈ ట్యుటోరియల్](https://huggingface.co/docs/transformers/task_summary)లో `pipeline` API ద్వారా సపోర్ట్ చేసే టాస్క్‌ల గురించి మరింత తెలుసుకోవచ్చు.
 
-In addition to `pipeline`, to download and use any of the pretrained models on your given task, all it takes is three lines of code. Here is the PyTorch version:
+`pipeline`తో పాటు, మీరు ఇచ్చిన టాస్క్‌లో ఏదైనా ప్రీట్రైన్డ్ మోడల్‌లను డౌన్‌లోడ్ చేయడానికి మరియు ఉపయోగించడానికి, దీనికి మూడు లైన్ల కోడ్ సరిపోతుంది. ఇక్కడ PyTorch వెర్షన్ ఉంది:
 ```python
 >>> from transformers import AutoTokenizer, AutoModel
 
@@ -202,7 +203,7 @@ In addition to `pipeline`, to download and use any of the pretrained models on y
 >>> outputs = model(**inputs)
 ```
 
-And here is the equivalent code for TensorFlow:
+మరియు TensorFlow కి సమానమైన కోడ్ ఇక్కడ ఉంది:
 ```python
 >>> from transformers import AutoTokenizer, TFAutoModel
 
@@ -213,81 +214,81 @@ And here is the equivalent code for TensorFlow:
 >>> outputs = model(**inputs)
 ```
 
-The tokenizer is responsible for all the preprocessing the pretrained model expects and can be called directly on a single string (as in the above examples) or a list. It will output a dictionary that you can use in downstream code or simply directly pass to your model using the ** argument unpacking operator.
+ప్రిట్రైన్డ్ మోడల్ ఆశించే అన్ని ప్రీప్రాసెసింగ్‌లకు టోకెనైజర్ బాధ్యత వహిస్తుంది మరియు నేరుగా ఒకే స్ట్రింగ్ (పై ఉదాహరణలలో వలె) లేదా జాబితాపై కాల్ చేయవచ్చు. ఇది మీరు డౌన్‌స్ట్రీమ్ కోడ్‌లో ఉపయోగించగల నిఘంటువుని అవుట్‌పుట్ చేస్తుంది లేదా ** ఆర్గ్యుమెంట్ అన్‌ప్యాకింగ్ ఆపరేటర్‌ని ఉపయోగించి నేరుగా మీ మోడల్‌కి పంపుతుంది.
 
-The model itself is a regular [Pytorch `nn.Module`](https://pytorch.org/docs/stable/nn.html#torch.nn.Module) or a [TensorFlow `tf.keras.Model`](https://www.tensorflow.org/api_docs/python/tf/keras/Model) (depending on your backend) which you can use as usual. [This tutorial](https://huggingface.co/docs/transformers/training) explains how to integrate such a model into a classic PyTorch or TensorFlow training loop, or how to use our `Trainer` API to quickly fine-tune on a new dataset.
+మోడల్ కూడా సాధారణ [Pytorch `nn.Module`](https://pytorch.org/docs/stable/nn.html#torch.nn.Module) లేదా [TensorFlow `tf.keras.Model`]( https://www.tensorflow.org/api_docs/python/tf/keras/Model) (మీ బ్యాకెండ్‌ని బట్టి) మీరు మామూలుగా ఉపయోగించవచ్చు. [ఈ ట్యుటోరియల్](https://huggingface.co/docs/transformers/training) అటువంటి మోడల్‌ని క్లాసిక్ PyTorch లేదా TensorFlow ట్రైనింగ్ లూప్‌లో ఎలా ఇంటిగ్రేట్ చేయాలో లేదా మా `Trainer` API ని ఎలా ఉపయోగించాలో వివరిస్తుంది కొత్త డేటాసెట్.
 
-## Why should I use transformers?
+## నేను ట్రాన్స్‌ఫార్మర్‌లను ఎందుకు ఉపయోగించాలి?
 
-1. Easy-to-use state-of-the-art models:
-    - High performance on natural language understanding & generation, computer vision, and audio tasks.
-    - Low barrier to entry for educators and practitioners.
-    - Few user-facing abstractions with just three classes to learn.
-    - A unified API for using all our pretrained models.
+1. ఉపయోగించడానికి సులభమైన స్టేట్ ఆఫ్ ది ఆర్ట్ మోడల్‌లు:
+    - సహజ భాషా అవగాహన & ఉత్పత్తి, కంప్యూటర్ దృష్టి మరియు ఆడియో పనులపై అధిక పనితీరు.
+    - విద్యావేత్తలు మరియు అభ్యాసకుల ప్రవేశానికి తక్కువ అవరోధం.
+    - తెలుసుకోవడానికి కేవలం మూడు తరగతులతో కొన్ని వినియోగదారు-ముఖ సంగ్రహణలు.
+    - మా అన్ని ప్రీట్రైన్డ్ మోడల్‌లను ఉపయోగించడం కోసం ఏకీకృత API.
+  
+2. తక్కువ గణన ఖర్చులు, చిన్న కార్బన్ పాదముద్ర:
+    - పరిశోధకులు ఎల్లప్పుడూ మళ్లీ శిక్షణ పొందే బదులు శిక్షణ పొందిన నమూనాలను పంచుకోవచ్చు.
+    - అభ్యాసకులు గణన సమయాన్ని మరియు ఉత్పత్తి ఖర్చులను తగ్గించగలరు.
+    - అన్ని పద్ధతుల్లో 60,000 కంటే ఎక్కువ ప్రీట్రైన్డ్ మోడల్‌లతో డజన్ల కొద్దీ ఆర్కిటెక్చర్‌లు.
+  
+3. మోడల్ జీవితకాలంలో ప్రతి భాగానికి సరైన ఫ్రేమ్‌వర్క్‌ను ఎంచుకోండి:
+    - 3 లైన్ల కోడ్‌లో స్టేట్ ఆఫ్ ది ఆర్ట్ మోడల్‌లకు శిక్షణ ఇవ్వండి.
+    - TF2.0/PyTorch/JAX ఫ్రేమ్‌వర్క్‌ల మధ్య ఒకే మోడల్‌ను ఇష్టానుసారంగా తరలించండి.
+    - శిక్షణ, మూల్యాంకనం మరియు ఉత్పత్తి కోసం సరైన ఫ్రేమ్‌వర్క్‌ను సజావుగా ఎంచుకోండి.
 
-1. Lower compute costs, smaller carbon footprint:
-    - Researchers can share trained models instead of always retraining.
-    - Practitioners can reduce compute time and production costs.
-    - Dozens of architectures with over 60,000 pretrained models across all modalities.
+4. మీ అవసరాలకు అనుగుణంగా మోడల్ లేదా ఉదాహరణను సులభంగా అనుకూలీకరించండి:
+    - ప్రతి ఆర్కిటెక్చర్ దాని అసలు రచయితలు ప్రచురించిన ఫలితాలను పునరుత్పత్తి చేయడానికి మేము ఉదాహరణలను అందిస్తాము.
+    - మోడల్ ఇంటర్నల్‌లు వీలైనంత స్థిరంగా బహిర్గతమవుతాయి.
+    - శీఘ్ర ప్రయోగాల కోసం లైబ్రరీ నుండి స్వతంత్రంగా మోడల్ ఫైల్‌లను ఉపయోగించవచ్చు.
 
-1. Choose the right framework for every part of a model's lifetime:
-    - Train state-of-the-art models in 3 lines of code.
-    - Move a single model between TF2.0/PyTorch/JAX frameworks at will.
-    - Seamlessly pick the right framework for training, evaluation, and production.
+## నేను ట్రాన్స్‌ఫార్మర్‌లను ఎందుకు ఉపయోగించకూడదు?
 
-1. Easily customize a model or an example to your needs:
-    - We provide examples for each architecture to reproduce the results published by its original authors.
-    - Model internals are exposed as consistently as possible.
-    - Model files can be used independently of the library for quick experiments.
+- ఈ లైబ్రరీ న్యూరల్ నెట్‌ల కోసం బిల్డింగ్ బ్లాక్‌ల మాడ్యులర్ టూల్‌బాక్స్ కాదు. మోడల్ ఫైల్‌లలోని కోడ్ ఉద్దేశపూర్వకంగా అదనపు సంగ్రహణలతో రీఫ్యాక్టరింగ్ చేయబడదు, తద్వారా పరిశోధకులు అదనపు సంగ్రహణలు/ఫైళ్లలోకి ప్రవేశించకుండా ప్రతి మోడల్‌పై త్వరగా మళ్లించగలరు.
+- శిక్షణ API ఏ మోడల్‌లో పని చేయడానికి ఉద్దేశించబడలేదు కానీ లైబ్రరీ అందించిన మోడల్‌లతో పని చేయడానికి ఆప్టిమైజ్ చేయబడింది. సాధారణ మెషిన్ లెర్నింగ్ లూప్‌ల కోసం, మీరు మరొక లైబ్రరీని ఉపయోగించాలి (బహుశా, [Accelerate](https://huggingface.co/docs/accelerate)).
+- మేము వీలైనన్ని ఎక్కువ వినియోగ సందర్భాలను ప్రదర్శించడానికి ప్రయత్నిస్తున్నప్పుడు, మా [ఉదాహరణల ఫోల్డర్](https://github.com/huggingface/transformers/tree/main/examples)లోని స్క్రిప్ట్‌లు కేవలం: ఉదాహరణలు. మీ నిర్దిష్ట సమస్యపై అవి పని చేయవు మరియు వాటిని మీ అవసరాలకు అనుగుణంగా మార్చుకోవడానికి మీరు కొన్ని కోడ్ లైన్‌లను మార్చవలసి ఉంటుంది.
 
-## Why shouldn't I use transformers?
+## సంస్థాపన
 
-- This library is not a modular toolbox of building blocks for neural nets. The code in the model files is not refactored with additional abstractions on purpose, so that researchers can quickly iterate on each of the models without diving into additional abstractions/files.
-- The training API is not intended to work on any model but is optimized to work with the models provided by the library. For generic machine learning loops, you should use another library (possibly, [Accelerate](https://huggingface.co/docs/accelerate)).
-- While we strive to present as many use cases as possible, the scripts in our [examples folder](https://github.com/huggingface/transformers/tree/main/examples) are just that: examples. It is expected that they won't work out-of-the-box on your specific problem and that you will be required to change a few lines of code to adapt them to your needs.
+### పిప్ తో
 
-## Installation
+ఈ రిపోజిటరీ పైథాన్ 3.8+, ఫ్లాక్స్ 0.4.1+, PyTorch 1.10+ మరియు TensorFlow 2.6+లో పరీక్షించబడింది.
 
-### With pip
+మీరు [వర్చువల్ వాతావరణం](https://docs.python.org/3/library/venv.html)లో 🤗 ట్రాన్స్‌ఫార్మర్‌లను ఇన్‌స్టాల్ చేయాలి. మీకు పైథాన్ వర్చువల్ పరిసరాల గురించి తెలియకుంటే, [యూజర్ గైడ్](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) చూడండి.
 
-This repository is tested on Python 3.8+, Flax 0.4.1+, PyTorch 1.10+, and TensorFlow 2.6+.
+ముందుగా, మీరు ఉపయోగించబోతున్న పైథాన్ వెర్షన్‌తో వర్చువల్ వాతావరణాన్ని సృష్టించండి మరియు దానిని సక్రియం చేయండి.
 
-You should install 🤗 Transformers in a [virtual environment](https://docs.python.org/3/library/venv.html). If you're unfamiliar with Python virtual environments, check out the [user guide](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/).
+అప్పుడు, మీరు ఫ్లాక్స్, పైటార్చ్ లేదా టెన్సర్‌ఫ్లోలో కనీసం ఒకదానిని ఇన్‌స్టాల్ చేయాలి.
+దయచేసి [TensorFlow ఇన్‌స్టాలేషన్ పేజీ](https://www.tensorflow.org/install/), [PyTorch ఇన్‌స్టాలేషన్ పేజీ](https://pytorch.org/get-started/locally/#start-locally) మరియు/ని చూడండి లేదా మీ ప్లాట్‌ఫారమ్ కోసం నిర్దిష్ట ఇన్‌స్టాలేషన్ కమాండ్‌కు సంబంధించి [Flax](https://github.com/google/flax#quick-install) మరియు [Jax](https://github.com/google/jax#installation) ఇన్‌స్టాలేషన్ పేజీలు .
 
-First, create a virtual environment with the version of Python you're going to use and activate it.
-
-Then, you will need to install at least one of Flax, PyTorch, or TensorFlow.
-Please refer to [TensorFlow installation page](https://www.tensorflow.org/install/), [PyTorch installation page](https://pytorch.org/get-started/locally/#start-locally) and/or [Flax](https://github.com/google/flax#quick-install) and [Jax](https://github.com/google/jax#installation) installation pages regarding the specific installation command for your platform.
-
-When one of those backends has been installed, 🤗 Transformers can be installed using pip as follows:
+ఆ బ్యాకెండ్‌లలో ఒకటి ఇన్‌స్టాల్ చేయబడినప్పుడు, 🤗 ట్రాన్స్‌ఫార్మర్‌లను ఈ క్రింది విధంగా పిప్‌ని ఉపయోగించి ఇన్‌స్టాల్ చేయవచ్చు:
 
 ```bash
 pip install transformers
 ```
 
-If you'd like to play with the examples or need the bleeding edge of the code and can't wait for a new release, you must [install the library from source](https://huggingface.co/docs/transformers/installation#installing-from-source).
+మీరు ఉదాహరణలతో ప్లే చేయాలనుకుంటే లేదా కోడ్ యొక్క బ్లీడింగ్ ఎడ్జ్ అవసరం మరియు కొత్త విడుదల కోసం వేచి ఉండలేకపోతే, మీరు తప్పనిసరిగా [మూలం నుండి లైబ్రరీని ఇన్‌స్టాల్ చేయాలి](https://huggingface.co/docs/transformers/installation#installing-from-source).
 
-### With conda
+### కొండా తో
 
-Since Transformers version v4.0.0, we now have a conda channel: `huggingface`.
+ట్రాన్స్‌ఫార్మర్స్ వెర్షన్ v4.0.0 నుండి, మేము ఇప్పుడు కొండా ఛానెల్‌ని కలిగి ఉన్నాము: `huggingface`.
 
-🤗 Transformers can be installed using conda as follows:
+🤗 కింది విధంగా కొండా ఉపయోగించి ట్రాన్స్‌ఫార్మర్‌లను ఇన్‌స్టాల్ చేయవచ్చు:
 
 ```shell script
 conda install -c huggingface transformers
 ```
 
-Follow the installation pages of Flax, PyTorch or TensorFlow to see how to install them with conda.
+Flax, PyTorch లేదా TensorFlow యొక్క ఇన్‌స్టాలేషన్ పేజీలను కొండాతో ఎలా ఇన్‌స్టాల్ చేయాలో చూడటానికి వాటిని అనుసరించండి.
 
-> **_NOTE:_**  On Windows, you may be prompted to activate Developer Mode in order to benefit from caching. If this is not an option for you, please let us know in [this issue](https://github.com/huggingface/huggingface_hub/issues/1062).
+> **_గమనిక:_** Windowsలో, కాషింగ్ నుండి ప్రయోజనం పొందేందుకు మీరు డెవలపర్ మోడ్‌ని సక్రియం చేయమని ప్రాంప్ట్ చేయబడవచ్చు. ఇది మీకు ఎంపిక కాకపోతే, దయచేసి [ఈ సంచిక](https://github.com/huggingface/huggingface_hub/issues/1062)లో మాకు తెలియజేయండి.
 
-## Model architectures
+## మోడల్ ఆర్కిటెక్చర్లు
 
-**[All the model checkpoints](https://huggingface.co/models)** provided by 🤗 Transformers are seamlessly integrated from the huggingface.co [model hub](https://huggingface.co/models), where they are uploaded directly by [users](https://huggingface.co/users) and [organizations](https://huggingface.co/organizations).
+**[అన్ని మోడల్ చెక్‌పాయింట్‌లు](https://huggingface.co/models)** 🤗 అందించిన ట్రాన్స్‌ఫార్మర్లు huggingface.co [model hub](https://huggingface.co/models) నుండి సజావుగా ఏకీకృతం చేయబడ్డాయి [users](https://huggingface.co/users) మరియు [organizations](https://huggingface.co/organizations) ద్వారా నేరుగా అప్‌లోడ్ చేయబడతాయి.
 
-Current number of checkpoints: ![](https://img.shields.io/endpoint?url=https://huggingface.co/api/shields/models&color=brightgreen)
+ప్రస్తుత తనిఖీ కేంద్రాల సంఖ్య: ![](https://img.shields.io/endpoint?url=https://huggingface.co/api/shields/models&color=brightgreen)
 
-🤗 Transformers currently provides the following architectures (see [here](https://huggingface.co/docs/transformers/model_summary) for a high-level summary of each them):
+🤗 ట్రాన్స్‌ఫార్మర్లు ప్రస్తుతం కింది ఆర్కిటెక్చర్‌లను అందజేస్తున్నాయి (వాటిలో ప్రతి ఒక్కటి ఉన్నత స్థాయి సారాంశం కోసం [ఇక్కడ](https://huggingface.co/docs/transformers/model_summary) చూడండి):
 
 1. **[ALBERT](https://huggingface.co/docs/transformers/model_doc/albert)** (from Google Research and the Toyota Technological Institute at Chicago) released with the paper [ALBERT: A Lite BERT for Self-supervised Learning of Language Representations](https://arxiv.org/abs/1909.11942), by Zhenzhong Lan, Mingda Chen, Sebastian Goodman, Kevin Gimpel, Piyush Sharma, Radu Soricut.
 1. **[ALIGN](https://huggingface.co/docs/transformers/model_doc/align)** (from Google Research) released with the paper [Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision](https://arxiv.org/abs/2102.05918) by Chao Jia, Yinfei Yang, Ye Xia, Yi-Ting Chen, Zarana Parekh, Hieu Pham, Quoc V. Le, Yunhsuan Sung, Zhen Li, Tom Duerig.
@@ -386,7 +387,6 @@ Current number of checkpoints: ![](https://img.shields.io/endpoint?url=https://h
 1. **[Informer](https://huggingface.co/docs/transformers/model_doc/informer)** (from Beihang University, UC Berkeley, Rutgers University, SEDD Company) released with the paper [Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting](https://arxiv.org/abs/2012.07436) by Haoyi Zhou, Shanghang Zhang, Jieqi Peng, Shuai Zhang, Jianxin Li, Hui Xiong, and Wancai Zhang.
 1. **[InstructBLIP](https://huggingface.co/docs/transformers/model_doc/instructblip)** (from Salesforce) released with the paper [InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning](https://arxiv.org/abs/2305.06500) by Wenliang Dai, Junnan Li, Dongxu Li, Anthony Meng Huat Tiong, Junqi Zhao, Weisheng Wang, Boyang Li, Pascale Fung, Steven Hoi.
 1. **[Jukebox](https://huggingface.co/docs/transformers/model_doc/jukebox)** (from OpenAI) released with the paper [Jukebox: A Generative Model for Music](https://arxiv.org/pdf/2005.00341.pdf) by Prafulla Dhariwal, Heewoo Jun, Christine Payne, Jong Wook Kim, Alec Radford, Ilya Sutskever.
-1. **[KOSMOS-2](https://huggingface.co/docs/transformers/model_doc/kosmos-2)** (from Microsoft Research Asia) released with the paper [Kosmos-2: Grounding Multimodal Large Language Models to the World](https://arxiv.org/abs/2306.14824) by Zhiliang Peng, Wenhui Wang, Li Dong, Yaru Hao, Shaohan Huang, Shuming Ma, Furu Wei.
 1. **[LayoutLM](https://huggingface.co/docs/transformers/model_doc/layoutlm)** (from Microsoft Research Asia) released with the paper [LayoutLM: Pre-training of Text and Layout for Document Image Understanding](https://arxiv.org/abs/1912.13318) by Yiheng Xu, Minghao Li, Lei Cui, Shaohan Huang, Furu Wei, Ming Zhou.
 1. **[LayoutLMv2](https://huggingface.co/docs/transformers/model_doc/layoutlmv2)** (from Microsoft Research Asia) released with the paper [LayoutLMv2: Multi-modal Pre-training for Visually-Rich Document Understanding](https://arxiv.org/abs/2012.14740) by Yang Xu, Yiheng Xu, Tengchao Lv, Lei Cui, Furu Wei, Guoxin Wang, Yijuan Lu, Dinei Florencio, Cha Zhang, Wanxiang Che, Min Zhang, Lidong Zhou.
 1. **[LayoutLMv3](https://huggingface.co/docs/transformers/model_doc/layoutlmv3)** (from Microsoft Research Asia) released with the paper [LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking](https://arxiv.org/abs/2204.08387) by Yupan Huang, Tengchao Lv, Lei Cui, Yutong Lu, Furu Wei.
@@ -437,7 +437,7 @@ Current number of checkpoints: ![](https://img.shields.io/endpoint?url=https://h
 1. **[OpenLlama](https://huggingface.co/docs/transformers/model_doc/open-llama)** (from [s-JoL](https://huggingface.co/s-JoL)) released on GitHub (now removed).
 1. **[OPT](https://huggingface.co/docs/transformers/master/model_doc/opt)** (from Meta AI) released with the paper [OPT: Open Pre-trained Transformer Language Models](https://arxiv.org/abs/2205.01068) by Susan Zhang, Stephen Roller, Naman Goyal, Mikel Artetxe, Moya Chen, Shuohui Chen et al.
 1. **[OWL-ViT](https://huggingface.co/docs/transformers/model_doc/owlvit)** (from Google AI) released with the paper [Simple Open-Vocabulary Object Detection with Vision Transformers](https://arxiv.org/abs/2205.06230) by Matthias Minderer, Alexey Gritsenko, Austin Stone, Maxim Neumann, Dirk Weissenborn, Alexey Dosovitskiy, Aravindh Mahendran, Anurag Arnab, Mostafa Dehghani, Zhuoran Shen, Xiao Wang, Xiaohua Zhai, Thomas Kipf, and Neil Houlsby.
-1. **[OWLv2](https://huggingface.co/docs/transformers/model_doc/owlv2)** (from Google AI) released with the paper [Scaling Open-Vocabulary Object Detection](https://arxiv.org/abs/2306.09683) by Matthias Minderer, Alexey Gritsenko, Neil Houlsby.
+1. **[OWLv2](https://huggingface.co/docs/transformers/main/model_doc/owlv2)** (from Google AI) released with the paper [Scaling Open-Vocabulary Object Detection](https://arxiv.org/abs/2306.09683) by Matthias Minderer, Alexey Gritsenko, Neil Houlsby.
 1. **[Pegasus](https://huggingface.co/docs/transformers/model_doc/pegasus)** (from Google) released with the paper [PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization](https://arxiv.org/abs/1912.08777) by Jingqing Zhang, Yao Zhao, Mohammad Saleh and Peter J. Liu.
 1. **[PEGASUS-X](https://huggingface.co/docs/transformers/model_doc/pegasus_x)** (from Google) released with the paper [Investigating Efficiently Extending Transformers for Long Input Summarization](https://arxiv.org/abs/2208.04347) by Jason Phang, Yao Zhao, and Peter J. Liu.
 1. **[Perceiver IO](https://huggingface.co/docs/transformers/model_doc/perceiver)** (from Deepmind) released with the paper [Perceiver IO: A General Architecture for Structured Inputs & Outputs](https://arxiv.org/abs/2107.14795) by Andrew Jaegle, Sebastian Borgeaud, Jean-Baptiste Alayrac, Carl Doersch, Catalin Ionescu, David Ding, Skanda Koppula, Daniel Zoran, Andrew Brock, Evan Shelhamer, Olivier Hénaff, Matthew M. Botvinick, Andrew Zisserman, Oriol Vinyals, João Carreira.
@@ -461,7 +461,7 @@ Current number of checkpoints: ![](https://img.shields.io/endpoint?url=https://h
 1. **[RoCBert](https://huggingface.co/docs/transformers/model_doc/roc_bert)** (from WeChatAI) released with the paper [RoCBert: Robust Chinese Bert with Multimodal Contrastive Pretraining](https://aclanthology.org/2022.acl-long.65.pdf) by HuiSu, WeiweiShi, XiaoyuShen, XiaoZhou, TuoJi, JiaruiFang, JieZhou.
 1. **[RoFormer](https://huggingface.co/docs/transformers/model_doc/roformer)** (from ZhuiyiTechnology), released together with the paper [RoFormer: Enhanced Transformer with Rotary Position Embedding](https://arxiv.org/abs/2104.09864) by Jianlin Su and Yu Lu and Shengfeng Pan and Bo Wen and Yunfeng Liu.
 1. **[RWKV](https://huggingface.co/docs/transformers/model_doc/rwkv)** (from Bo Peng), released on [this repo](https://github.com/BlinkDL/RWKV-LM) by Bo Peng.
-1. **[SeamlessM4T](https://huggingface.co/docs/transformers/model_doc/seamless_m4t)** (from Meta AI) released with the paper [SeamlessM4T — Massively Multilingual & Multimodal Machine Translation](https://dl.fbaipublicfiles.com/seamless/seamless_m4t_paper.pdf) by the Seamless Communication team.
+1. **[SeamlessM4T](https://huggingface.co/docs/transformers/main/model_doc/seamless_m4t)** (from Meta AI) released with the paper [SeamlessM4T — Massively Multilingual & Multimodal Machine Translation](https://dl.fbaipublicfiles.com/seamless/seamless_m4t_paper.pdf) by the Seamless Communication team.
 1. **[SegFormer](https://huggingface.co/docs/transformers/model_doc/segformer)** (from NVIDIA) released with the paper [SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers](https://arxiv.org/abs/2105.15203) by Enze Xie, Wenhai Wang, Zhiding Yu, Anima Anandkumar, Jose M. Alvarez, Ping Luo.
 1. **[Segment Anything](https://huggingface.co/docs/transformers/model_doc/sam)** (from Meta AI) released with the paper [Segment Anything](https://arxiv.org/pdf/2304.02643v1.pdf) by Alexander Kirillov, Eric Mintun, Nikhila Ravi, Hanzi Mao, Chloe Rolland, Laura Gustafson, Tete Xiao, Spencer Whitehead, Alex Berg, Wan-Yen Lo, Piotr Dollar, Ross Girshick.
 1. **[SEW](https://huggingface.co/docs/transformers/model_doc/sew)** (from ASAPP) released with the paper [Performance-Efficiency Trade-offs in Unsupervised Pre-training for Speech Recognition](https://arxiv.org/abs/2109.06870) by Felix Wu, Kwangyoun Kim, Jing Pan, Kyu Han, Kilian Q. Weinberger, Yoav Artzi.
@@ -522,27 +522,26 @@ Current number of checkpoints: ![](https://img.shields.io/endpoint?url=https://h
 1. **[XLSR-Wav2Vec2](https://huggingface.co/docs/transformers/model_doc/xlsr_wav2vec2)** (from Facebook AI) released with the paper [Unsupervised Cross-Lingual Representation Learning For Speech Recognition](https://arxiv.org/abs/2006.13979) by Alexis Conneau, Alexei Baevski, Ronan Collobert, Abdelrahman Mohamed, Michael Auli.
 1. **[YOLOS](https://huggingface.co/docs/transformers/model_doc/yolos)** (from Huazhong University of Science & Technology) released with the paper [You Only Look at One Sequence: Rethinking Transformer in Vision through Object Detection](https://arxiv.org/abs/2106.00666) by Yuxin Fang, Bencheng Liao, Xinggang Wang, Jiemin Fang, Jiyang Qi, Rui Wu, Jianwei Niu, Wenyu Liu.
 1. **[YOSO](https://huggingface.co/docs/transformers/model_doc/yoso)** (from the University of Wisconsin - Madison) released with the paper [You Only Sample (Almost) Once: Linear Cost Self-Attention Via Bernoulli Sampling](https://arxiv.org/abs/2111.09714) by Zhanpeng Zeng, Yunyang Xiong, Sathya N. Ravi, Shailesh Acharya, Glenn Fung, Vikas Singh.
-1. Want to contribute a new model? We have added a **detailed guide and templates** to guide you in the process of adding a new model. You can find them in the [`templates`](./templates) folder of the repository. Be sure to check the [contributing guidelines](./CONTRIBUTING.md) and contact the maintainers or open an issue to collect feedback before starting your PR.
+1. కొత్త మోడల్‌ను అందించాలనుకుంటున్నారా? కొత్త మోడల్‌ను జోడించే ప్రక్రియలో మీకు మార్గనిర్దేశం చేసేందుకు మేము **వివరణాత్మక గైడ్ మరియు టెంప్లేట్‌లను** జోడించాము. మీరు వాటిని రిపోజిటరీ యొక్క [`టెంప్లేట్లు`](./టెంప్లేట్లు) ఫోల్డర్‌లో కనుగొనవచ్చు. మీ PRని ప్రారంభించడానికి ముందు [సహకార మార్గదర్శకాలు](./CONTRIBUTING.md)ని తనిఖీ చేసి, నిర్వహణదారులను సంప్రదించండి లేదా అభిప్రాయాన్ని సేకరించడానికి సమస్యను తెరవండి.
 
-To check if each model has an implementation in Flax, PyTorch or TensorFlow, or has an associated tokenizer backed by the 🤗 Tokenizers library, refer to [this table](https://huggingface.co/docs/transformers/index#supported-frameworks).
+ప్రతి మోడల్ ఫ్లాక్స్, పైటార్చ్ లేదా టెన్సర్‌ఫ్లోలో అమలు చేయబడిందా లేదా 🤗 Tokenizers లైబ్రరీ ద్వారా అనుబంధించబడిన టోకెనైజర్‌ని కలిగి ఉందో లేదో తనిఖీ చేయడానికి, [ఈ పట్టిక](https://huggingface.co/docs/transformers/index#supported-frameworks).
 
-These implementations have been tested on several datasets (see the example scripts) and should match the performance of the original implementations. You can find more details on performance in the Examples section of the [documentation](https://github.com/huggingface/transformers/tree/main/examples).
+ఈ అమలులు అనేక డేటాసెట్‌లలో పరీక్షించబడ్డాయి (ఉదాహరణ స్క్రిప్ట్‌లను చూడండి) మరియు అసలైన అమలుల పనితీరుతో సరిపోలాలి. మీరు [డాక్యుమెంటేషన్](https://github.com/huggingface/transformers/tree/main/examples) యొక్క ఉదాహరణల విభాగంలో పనితీరుపై మరిన్ని వివరాలను కనుగొనవచ్చు.
 
+## ఇంకా నేర్చుకో
 
-## Learn more
-
-| Section | Description |
+| విభాగం | వివరణ |
 |-|-|
-| [Documentation](https://huggingface.co/docs/transformers/) | Full API documentation and tutorials |
-| [Task summary](https://huggingface.co/docs/transformers/task_summary) | Tasks supported by 🤗 Transformers |
-| [Preprocessing tutorial](https://huggingface.co/docs/transformers/preprocessing) | Using the `Tokenizer` class to prepare data for the models |
-| [Training and fine-tuning](https://huggingface.co/docs/transformers/training) | Using the models provided by 🤗 Transformers in a PyTorch/TensorFlow training loop and the `Trainer` API |
-| [Quick tour: Fine-tuning/usage scripts](https://github.com/huggingface/transformers/tree/main/examples) | Example scripts for fine-tuning models on a wide range of tasks |
-| [Model sharing and uploading](https://huggingface.co/docs/transformers/model_sharing) | Upload and share your fine-tuned models with the community |
+| [డాక్యుమెంటేషన్](https://huggingface.co/docs/transformers/) | పూర్తి API డాక్యుమెంటేషన్ మరియు ట్యుటోరియల్స్ |
+| [టాస్క్ సారాంశం](https://huggingface.co/docs/transformers/task_summary) | 🤗 ట్రాన్స్‌ఫార్మర్‌ల ద్వారా సపోర్ట్ చేయబడిన విధులు |
+| [ప్రీప్రాసెసింగ్ ట్యుటోరియల్](https://huggingface.co/docs/transformers/preprocessing) | మోడల్‌ల కోసం డేటాను సిద్ధం చేయడానికి `Tokenizer` క్లాస్‌ని ఉపయోగించడం |
+| [ట్రైనింగ్ మరియు ఫైన్-ట్యూనింగ్](https://huggingface.co/docs/transformers/training) | PyTorch/TensorFlow ట్రైనింగ్ లూప్ మరియు `Trainer` APIలో 🤗 ట్రాన్స్‌ఫార్మర్లు అందించిన మోడల్‌లను ఉపయోగించడం |
+| [త్వరిత పర్యటన: ఫైన్-ట్యూనింగ్/యూసేజ్ స్క్రిప్ట్‌లు](https://github.com/huggingface/transformers/tree/main/examples) | విస్తృత శ్రేణి టాస్క్‌లపై ఫైన్-ట్యూనింగ్ మోడల్స్ కోసం ఉదాహరణ స్క్రిప్ట్‌లు |
+| [మోడల్ భాగస్వామ్యం మరియు అప్‌లోడ్ చేయడం](https://huggingface.co/docs/transformers/model_sharing) | కమ్యూనిటీతో మీ ఫైన్-ట్యూన్డ్ మోడల్‌లను అప్‌లోడ్ చేయండి మరియు భాగస్వామ్యం చేయండి |
 
-## Citation
+## అనులేఖనం
 
-We now have a [paper](https://www.aclweb.org/anthology/2020.emnlp-demos.6/) you can cite for the 🤗 Transformers library:
+🤗 ట్రాన్స్‌ఫార్మర్స్ లైబ్రరీ కోసం మీరు ఉదహరించగల [పేపర్](https://www.aclweb.org/anthology/2020.emnlp-demos.6/) ఇప్పుడు మా వద్ద ఉంది:
 ```bibtex
 @inproceedings{wolf-etal-2020-transformers,
     title = "Transformers: State-of-the-Art Natural Language Processing",
